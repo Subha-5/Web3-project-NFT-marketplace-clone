@@ -80,7 +80,7 @@ http://localhost:8080/
 
 ```
 <input
-        placeholder="Price in DANG"
+        placeholder="Price in CATECOINs"
         type="number"
         className="price-input"
         value={}
@@ -92,7 +92,7 @@ http://localhost:8080/
 
 ```
 <div className="disButtonBase-root disChip-root makeStyles-price-23 disChip-outlined">
-          <span className="disChip-label">23 DANG</span>
+          <span className="disChip-label">23 CATECOINs</span>
         </div>
 ```
 
@@ -109,7 +109,7 @@ dfx canister call opend mint '(vec {137; 80; 78; 71; 13; 10; 26; 10; 0; 0; 0; 13
 ```
 dfx canister call opend listItem '(principal "<REPLACE WITH NFT CANISTER ID>", 2)'
 
-eg: dfx canister call opend listItem '(principal "renrk-eyaaa-aaaaa-aaada-cai", 2)'
+eg: dfx canister call opend listItem '(principal "qaa6y-5yaaa-aaaaa-aaafa-cai", 2)'
 ```
 
 3. Get OpenD canister ID:
@@ -123,7 +123,7 @@ dfx canister id opend
 ```
 dfx canister call <REPLACE WITH NFT CANISTER ID> transferOwnership '(principal "<REPLACE WITH OPEND CANISTER ID>", true)'
 
-eg: dfx canister call renrk-eyaaa-aaaaa-aaada-cai transferOwnership '(principal "ryjl3-tyaaa-aaaaa-aaaba-cai", true)'
+eg: dfx canister call qaa6y-5yaaa-aaaaa-aaafa-cai transferOwnership '(principal "ryjl3-tyaaa-aaaaa-aaaba-cai", true)'
 
 ```
 
@@ -134,7 +134,7 @@ eg: dfx canister call renrk-eyaaa-aaaaa-aaada-cai transferOwnership '(principal 
 2. Set the token canister id into the <REPLACE WITH TOKEN CANISTER ID>
 
 ```
-const dangPrincipal = Principal.fromText("<REPLACE WITH TOKEN CANISTER ID>");
+const catePrincipal = Principal.fromText("<REPLACE WITH TOKEN CANISTER ID>");
 ```
 
 
